@@ -1,11 +1,11 @@
 const productList = () => {
-    return fetch('http://localhost:3001/productos')
+    return fetch('https://fake-api-ten-gules.vercel.app/productos')
         .then(response => response.json())
         .catch(error => console.log(error));
 }
 
 const createProducto = ( nombre, precio, imagen ) => {
-    return fetch('http://localhost:3001/productos', {
+    return fetch('https://fake-api-ten-gules.vercel.app/productos', {
         method: 'POST',
         headers: {
             'Content-Type': 'application/json'
@@ -19,7 +19,7 @@ const createProducto = ( nombre, precio, imagen ) => {
 }
 
 const borrarProducto = ( id ) => {
-    return fetch(`http://localhost:3001/productos/${id}`, {
+    return fetch(`https://fake-api-ten-gules.vercel.app/productos/${id}`, {
         method: "DELETE",
     })
     .then((res) => res.json())
