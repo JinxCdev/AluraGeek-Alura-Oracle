@@ -4,7 +4,7 @@
   "description": "Practica AluraGeek Alura + Oracke",
   "main": "index.js",
   "scripts": {
-    "start": "node server.js",
+    "start": "node api/server.js",
     "server": "json-server database/db.json --port 3001" 
   },
   "author": "Jinson",
