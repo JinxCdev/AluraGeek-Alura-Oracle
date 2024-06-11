@@ -1,0 +1,15 @@
+{
+  "name": "alurageek",
+  "version": "1.0.0",
+  "description": "Practica AluraGeek Alura + Oracke",
+  "main": "index.js",
+  "scripts": {
+    "start": "node server.js",
+    "server": "json-server database/db.json --port 3001" 
+  },
+  "author": "Jinson",
+  "license": "ISC",
+  "devDependencies": {
+    "json-server": "^1.0.0-beta.1"
+  }
+}
